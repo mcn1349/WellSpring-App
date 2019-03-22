@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+  <Space
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:id="@+id/space1" />
+  <TextView
+      android:text="User Account"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+      android:textColor="@android:color/black"
+      android:layout_marginLeft="10dp" />
+  <Mvx.MvxListView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind= "ItemClick SelectKeyCommand; ItemsSource ItemList"
+      android:layout_marginLeft="10dp" />
+  <TextView
+    android:text="Help"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView1"
+    android:textColor="@android:color/black"
+    android:layout_marginLeft="10dp" />
+  <Mvx.MvxListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind= "ItemClick TermCommand; ItemsSource TermList"
+    android:layout_marginLeft="10dp" />
+</LinearLayout>

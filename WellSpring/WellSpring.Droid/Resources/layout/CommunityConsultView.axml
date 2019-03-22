@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+  <TextView
+      android:text="Community Plan"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="24dp"
+      android:gravity="center"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:textColor="#EF678D" />
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:text="Messages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="12dp"
+        android:textColor="#EF678D" />
+    <Button
+        android:text="View History Consults"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00AFF0"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        local:MvxBind="Click History" />
+    <Button
+        android:text="Messages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00AFF0"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        local:MvxBind="Click Message" />
+    <TextView
+        android:text="Consult with Nurse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="12dp"
+        android:textColor="#EF678D" />
+  </LinearLayout>
+  <SearchView
+      android:hint="Search Nurse..."
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:theme="@android:style/Theme.DeviceDefault.Light"
+      android:gravity="left"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:layout_marginLeft="5dp" />
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:text="Search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00AFF0"
+        android:textColor="#FFF"
+        android:textSize="14dp" />
+    <Button
+        android:text="Nurse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00AFF0"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        local:MvxBind="Click Nurse" />
+  </LinearLayout>
+</LinearLayout>

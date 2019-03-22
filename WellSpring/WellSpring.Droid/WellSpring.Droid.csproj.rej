@@ -1,0 +1,10 @@
+diff a/WellSpring/WellSpring.Droid/WellSpring.Droid.csproj b/WellSpring/WellSpring.Droid/WellSpring.Droid.csproj	(rejected hunks)
+@@ -16,7 +16,7 @@
+     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
++    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+     <NuGetPackageImportStamp>
+     </NuGetPackageImportStamp>

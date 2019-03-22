@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="#EF678D">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="2"
+            android:id="@+id/textView5"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            local:MvxBind="Text GoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:src="@drawable/mobilemenuicon"
+            android:id="@+id/imageButton1"
+            android:background="@android:color/transparent"
+            local:MvxBind="Click GoalMenu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="StartDate"
+            android:textColor="#EF678D"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text" 
+            android:textIsSelectable="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/startdate"
+            local:MvxBind="Text StartStr" />
+        <Button
+            android:text="StartDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_margin="10dp"
+            android:textColor="#FFF"
+            android:background="#00AFF0"
+            android:id="@+id/startDate" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="FinishDate"
+            android:textColor="#EF678D"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text" 
+            android:textIsSelectable="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/finishdate"
+            local:MvxBind="Text FinishStr" />
+        <Button
+            android:text="FinishDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_margin="10dp"
+            android:textColor="#FFF"
+            android:background="#00AFF0"
+            android:id="@+id/finishDate" />
+    </LinearLayout>
+    <Button
+        android:text="Add Goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_margin="10dp"
+        android:textColor="#FFF"
+        android:background="#00AFF0"
+        local:MvxBind="Click CreateGoalCommand" />
+</LinearLayout>

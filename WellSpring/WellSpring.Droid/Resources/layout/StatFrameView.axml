@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout"
+    android:background="@drawable/frameborder">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/linearLayout">
+    <TextView
+        android:text="Calories"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView1" />
+  </LinearLayout>
+  <ImageView
+      android:src="@drawable/Graphholder"
+      android:layout_width="match_parent"
+      android:layout_height="84.0dp"
+      android:id="@+id/imageView1"
+      android:cropToPadding="true" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/linearLayout">
+    <Button
+        android:text="View Statistics"
+        android:layout_width="116.5dp"
+        android:layout_height="24.5dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button1"
+        android:layout_marginLeft="83.0dp"
+        android:layout_marginRight="17.0dp" />
+    <Button
+        android:text="Share"
+        android:layout_width="66.0dp"
+        android:layout_height="26.5dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button1"
+        android:layout_marginRight="65.0dp" />
+  </LinearLayout>
+</LinearLayout>

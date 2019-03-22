@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Calendar Select"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black" />
+    </TableLayout>
+    <CalendarView
+        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:id="@+id/clvCalendarView"
+        android:dateTextAppearance="@android:style/TextAppearance.Large"
+        style="@android:style/Widget.Material.CalendarView"
+        android:theme="@android:style/Theme.DeviceDefault.Light"
+        android:unfocusedMonthDateColor="@android:color/darker_gray"
+        android:focusedMonthDateColor="@android:color/background_dark"
+        local:MvxBind="Date ThisDate" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="day month year"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent"
+            local:MvxBind="Text Date" />
+        <Button
+            android:text="Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp" 
+            local:MvxBind="Click GoOrganiserCommand"/>
+    </TableLayout>
+</LinearLayout>

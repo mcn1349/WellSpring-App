@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            local:MvxBind="Click GoSelectCommand"
+            android:textSize="50dp" />
+        <TextView
+            android:text="Organise A Plan"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            local:MvxBind="Click GoComCalCommand"
+            android:textSize="50dp" />
+        <TextView
+            android:text="Community Plan"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent" />
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+<!--"Tree Pose"-->
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+      <!--////-->
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="35dp" />
+      <!--////-->
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="left">
+        <TextView
+            android:text="Sets:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:text="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black" />
+      </TableRow>
+      <!--////-->
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="35dp" />
+      <!--////-->
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="left">
+        <TextView
+            android:text="Duration:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:text="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:text="(min)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black" />
+      </TableRow>
+      <!--////-->
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="35dp" />
+      <!--////-->
+      <TextView
+          android:text="Calories Burned:"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25dp"
+          android:gravity="left"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="5dp"
+          android:textColor="@android:color/black" />
+      <TextView
+          android:text="300"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="25dp"
+          android:gravity="left"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="10dp"
+          android:textColor="@android:color/black" />
+      <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            local:MvxBind="Click AddCommand" />
+      </TableLayout>
+    </TableLayout>
+  </ScrollView>
+</LinearLayout>

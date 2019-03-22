@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="Enter your question here"
+        local:MvxBind="Text Question"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="Please provide more information about your question"
+        local:MvxBind="Text Detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Button
+        android:text="Common Concerns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click ConcernCommand"
+        android:id="@+id/button1" />
+    <Button
+        android:text="Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click SendCommand"
+        android:id="@+id/button2" />
+</LinearLayout>

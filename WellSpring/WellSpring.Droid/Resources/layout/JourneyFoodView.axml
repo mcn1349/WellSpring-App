@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EF678D">
+            <TextView
+                android:text="Food"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFF" />
+            <SearchView
+                android:hint="Search for food..."
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="or add:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#FFF" />
+                <Button
+                    android:text="Custom Food"
+                    android:layout_width="115dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="5dp"
+                    android:textSize="12dp"
+                    android:textColor="#FFF"
+                    android:background="#00AFF0"
+                    local:MvxBind="Click GoCustomFoodCommand" />
+            </TableRow>
+        </TableLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</TabHost>

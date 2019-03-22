@@ -1,0 +1,9 @@
+diff a/WellSpring/WellSpring.Droid/Services/DialogService.cs b/WellSpring/WellSpring.Droid/Services/DialogService.cs	(rejected hunks)
+@@ -58,6 +58,7 @@
+                 //alertDialog.SetButton(confirm);
+ 
+             }, null);
++            return null;
+         }
+ 
+         public Task<string> alertListString(string title, string[] list)

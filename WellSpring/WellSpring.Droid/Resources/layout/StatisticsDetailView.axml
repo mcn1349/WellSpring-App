@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFE9FF">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#FFF"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+      <TextView
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="30dp"
+          android:textColor="#EF678D"
+          android:layout_marginLeft="10dp"
+          local:MvxBind="Text Title" />
+    </LinearLayout>
+    <OxyPlot.Xamarin.Android.PlotView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        local:MvxBind="Model PlotModel" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#FFF"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/startDate">
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="16dp"
+          android:textColor="#EF678D"
+          android:text="Start Date" />
+      <EditText
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:textSize="24dp"
+          android:textColor="#000000"
+          android:id="@+id/DateStr1"
+          local:MvxBind="Text fromStr" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/endDate">
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="16dp"
+          android:textColor="#EF678D"
+          android:text="End Date" />
+      <EditText
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="24dp"
+          android:background="@android:color/transparent"
+          android:textColor="#000000"
+          android:id="@+id/DateStr2"
+          local:MvxBind="Text toStr" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#F4F4F4" />
+    <Button
+        android:text="Share"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:textColor="#EF678D" />
+  </LinearLayout>
+</LinearLayout>

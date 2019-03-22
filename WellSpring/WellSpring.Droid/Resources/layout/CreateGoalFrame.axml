@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:background="@android:drawable/editbox_background">
+            <TextView
+                android:text="Run 10km"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="2"
+                android:id="@+id/textView5"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                local:MvxBind="Text GoalTitle" />
+            <ImageButton
+                android:src="@drawable/mobilemenuicon"
+                android:layout_column="4"
+                android:id="@+id/imageButton1"
+                android:background="@android:color/background_light"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="90dp"
+                local:MvxBind="Click GoalMenu" />
+        </TableRow>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progressBar1"
+            android:progress="@android:integer/config_longAnimTime"
+            android:requiresFadingEdge="horizontal"
+            android:layout_height="30dp" />
+        <TableRow
+            android:id="@+id/tableRow4">
+            <TextView
+                android:text="Selected"
+                android:layout_column="1"
+                android:id="@+id/textView8"
+                android:textColor="@android:color/black" />
+            <Switch
+                android:layout_column="2"
+                android:id="@+id/switch1"
+                android:layout_marginLeft="10dp"
+                android:checked="false"
+                android:background="@android:color/background_light" />
+        </TableRow>
+        <EditText
+            android:text="StartDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/startdate" />
+        <Button
+            android:text="StartDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:id="@+id/startdatepickertest" />
+        <EditText
+            android:text="StartTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/starttime" />
+        <Button
+            android:text="StartTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp"
+            android:id="@+id/starttimepickertest" />
+        <EditText
+            android:text="FinishDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/finishdate" />
+        <Button
+            android:text="FinishDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10dp"
+            android:id="@+id/finishdatepickertest" />
+        <EditText
+            android:text="FinishTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/finishtime" />
+        <Button
+            android:text="FinishTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp"
+            android:id="@+id/finishtimepickertest" />
+    </TableLayout>
+</LinearLayout>
